@@ -1,0 +1,28 @@
+{
+  "name": "alfred_telegram_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prod.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "moment": "^2.24.0",
+    "mysql": "^2.18.1",
+    "promise-mysql": "^4.1.3",
+    "telegraf": "^3.36.0",
+    "telegraf-inline-menu": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xenodus/ccb-telegram-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xenodus/ccb-telegram-bot/issues"
+  },
+  "homepage": "https://github.com/xenodus/ccb-telegram-bot#readme"
+}
