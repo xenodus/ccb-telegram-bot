@@ -308,7 +308,7 @@ async function updateChatID(message) {
 async function fetchDisplayEvents(ctx) {
 
   discordPool.then(async function(pool){
-    await pool.query("SELECT * FROM event WHERE server_id = ? AND status = ? ORDER BY event_date ASC", [config.clanDiscordID, 'active']).then(async function(res){
+    await pool.query("SELECT * FROM event WHERE server_id = ? AND status = ? AND channel_id NOT IN (?) ORDER BY event_date ASC", [config.clanDiscordID, 'active', config.ignoreChannelIDs]).then(async function(res){
 
       if( res.length == 0 ) {
         ctx.reply("No events have been scheduled");
